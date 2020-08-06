@@ -10,6 +10,10 @@
   display: flex;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .flex-end {
   justify-content: flex-end;
 }
@@ -30,6 +34,10 @@
   justify-content: space-between;
 }
 
+.space-around {
+  justify-content: space-around;
+}
+
 .bg-red {
   background-color: #d35649;
 }
@@ -38,48 +46,88 @@
   color: white;
 }
 
+.text-black {
+  color: #222222;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .px-4 {
-  padding: 0 4px;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .px-8 {
-  padding: 0 8px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .px-16 {
-  padding: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .px-24 {
-  padding: 0 24px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .px-32 {
-  padding: 0 32px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .px-40 {
-  padding: 0 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.py-4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .py-8 {
-  padding: 8px 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .py-16 {
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .py-24 {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .py-32 {
-  padding: 32px 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .py-40 {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .w-25 {
@@ -98,26 +146,88 @@
   width: 100%;
 }
 
+.mx-auto {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+}
+
 nav {
-  height: 12vh;
+  font-family: "Roboto", sans-serif;
+
   img {
     width: 50px;
+  }
+
+  a {
+    transition: all 0.2s ease-in-out;
+  }
+
+  div a:hover {
+    text-decoration: underline;
+    transform: scale(1.15);
   }
 }
 
 header {
-  height: 88vh;
+  height: 440px;
   background: url(../images/hero.png),
-    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: overlay;
   background-position: center;
+  background-size: cover;
+
+  form,
+  a {
+    background: rgba($color: #eeeeee, $alpha: 0.8);
+  }
+
+  form {
+    width: 60%;
+    border-radius: 8px;
+
+    button {
+      margin-left: -2px;
+      border: none;
+      width: 96px;
+    }
+
+    input {
+      border: none;
+    }
+  }
+
+  a {
+    border-radius: 4px;
+  }
 }
 
 @media (max-width: 1024px) {
+  header {
+    form {
+      width: 75%;
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .hide-mobile {
     display: none;
+  }
+
+  header {
+    form {
+      width: 100%;
+    }
   }
 }

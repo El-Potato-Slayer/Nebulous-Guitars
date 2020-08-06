@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.grid {
+  display: grid;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.bg-red {
+  background-color: #d35649;
+}
+
+.text-white {
+  color: white;
+}
+
+.px-4 {
+  padding: 0 4px;
+}
+
+.px-8 {
+  padding: 0 8px;
+}
+
+.px-16 {
+  padding: 0 16px;
+}
+
+.px-24 {
+  padding: 0 24px;
+}
+
+.px-32 {
+  padding: 0 32px;
+}
+
+.px-40 {
+  padding: 0 40px;
+}
+
+.py-8 {
+  padding: 8px 0;
+}
+
+.py-16 {
+  padding: 16px 0;
+}
+
+.py-24 {
+  padding: 24px 0;
+}
+
+.py-32 {
+  padding: 32px 0;
+}
+
+.py-40 {
+  padding: 40px 0;
+}
+
+.w-25 {
+  width: 25%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+nav {
+  height: 12vh;
+}
+nav img {
+  width: 50px;
+}
+
+header {
+  height: 88vh;
+  background: url(../images/hero.png), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

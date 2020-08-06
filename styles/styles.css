@@ -20,6 +20,14 @@
   display: grid;
 }
 
+.col-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.col-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -38,6 +46,10 @@
 
 .bg-red {
   background-color: #d35649;
+}
+
+.bg-orange {
+  background-color: #e17e65;
 }
 
 .text-white {
@@ -98,6 +110,11 @@
   padding-right: 40px;
 }
 
+.px-80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .py-4 {
   padding-top: 4px;
   padding-bottom: 4px;
@@ -126,6 +143,15 @@
 .py-40 {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .w-25 {
@@ -178,6 +204,7 @@ header {
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 header form,
 header a {
@@ -199,9 +226,20 @@ header a {
   border-radius: 4px;
 }
 
+main section:first-child div {
+  grid-gap: 80px 240px;
+}
+main section:first-child h3 {
+  color: #e06b4b;
+}
+
 @media (max-width: 1024px) {
   header form {
     width: 75%;
+  }
+
+  main section:first-child div {
+    grid-gap: 80px;
   }
 }
 @media (max-width: 768px) {
@@ -211,6 +249,13 @@ header a {
 
   header form {
     width: 100%;
+  }
+
+  main section:first-child {
+    padding: 64px 24px;
+  }
+  main section:first-child div {
+    grid-template-columns: 1fr;
   }
 }
 

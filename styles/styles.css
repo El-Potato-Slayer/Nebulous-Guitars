@@ -68,6 +68,35 @@
   background: white;
 }
 
+.bg-black {
+  background-color: black;
+}
+
+.bg-dark {
+  background-color: #1f1f1f;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.border {
+  border: 1px solid #3d3d3d;
+}
+
+.icon-border {
+  font-size: 3em;
+  width: 3em;
+  line-height: 3em;
+  border-radius: 1.5em;
+  text-align: center;
+}
+
+.border-y {
+  border-top: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+}
+
 .text-white {
   color: white;
 }
@@ -76,8 +105,20 @@
   color: #222222;
 }
 
+.text-gray {
+  color: gray;
+}
+
+.text-orange {
+  color: #d75545;
+}
+
 .bold {
   font-weight: bold;
+}
+
+.font-weight-400 {
+  font-weight: 400;
 }
 
 .uppercase {
@@ -174,6 +215,10 @@
   width: 25%;
 }
 
+.w-45 {
+  width: 45%;
+}
+
 .w-50 {
   width: 50%;
 }
@@ -201,7 +246,8 @@ body {
 body a {
   text-decoration: none;
 }
-body button {
+body button,
+body input {
   border: none;
 }
 body button:hover {
@@ -242,9 +288,6 @@ header form button {
   margin-left: -2px;
   width: 96px;
 }
-header form input {
-  border: none;
-}
 header a {
   border-radius: 4px;
 }
@@ -265,7 +308,21 @@ main div section button:last-child {
   color: #98a4a5;
 }
 
+footer div div:first-child {
+  margin-right: -5px;
+}
+footer div div:last-child {
+  margin-left: -5px;
+}
+footer div section h3 {
+  letter-spacing: 5px;
+}
+
 @media (max-width: 1024px) {
+  footer {
+    padding: 0px;
+  }
+
   .hide-tablet {
     display: none;
   }
@@ -276,6 +333,13 @@ main div section button:last-child {
 
   main section:first-child div {
     grid-gap: 80px;
+  }
+
+  .icon-border {
+    width: 1.8em;
+    line-height: 1.8em;
+    border-radius: 0.9em;
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -290,15 +354,20 @@ main div section button:last-child {
     width: 100%;
   }
 
-  main section:first-child {
+  main > section:first-child {
     padding: 64px 24px;
   }
-  main section:first-child div {
+  main > section:first-child div {
     grid-template-columns: 1fr;
   }
   main div section {
     flex-direction: column;
     text-align: center;
+  }
+
+  footer {
+    padding: 0;
+    background-color: red;
   }
 }
 

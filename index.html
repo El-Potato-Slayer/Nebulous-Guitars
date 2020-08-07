@@ -15,21 +15,27 @@
     <title>Nebulous Guitars</title>
   </head>
   <body>
-    <nav class="flex space-between px-40 bg-red uppercase bold">
+    <nav class="flex space-between align-center px-40 bg-red uppercase bold">
       <a>
         <img src="images/logo2.png" alt="logo" />
         <!-- <p>Nebulous Guitars</p> -->
       </a>
-      <div class="flex space-between align-center">
-        <a href="#" class="px-8 hide-mobile text-white">
+      <div class="flex py-8 space-between align-center">
+        <a href="#" class="px-8 text-white">
           <i class="fa fa-search px-4"></i>
-          <span>Stores</span>
+          <span class="hide-tablet">Stores</span>
         </a>
-        <a href="#" class="px-8 hide-mobile text-white">About</a>
-        <a href="#" class="px-8 hide-mobile text-white">Blog</a>
+        <a href="#" class="px-8 text-white">
+          <i class="fa fa-user-o px-4"></i>
+          <span class="hide-tablet">About</span>
+        </a>
+        <a href="#" class="px-8 text-white">
+          <i class="fa fa-wifi px-4"></i>
+          <span class="hide-tablet">Blog</span>
+        </a>
         <a href="#" class="px-8 text-white">
           <i class="fa fa-bars px-4"></i>
-          <span class="hide-mobile">More</span>
+          <span class="hide-tablet">More</span>
         </a>
       </div>
     </nav>
@@ -99,6 +105,59 @@
           </div>
         </div>
       </section>
+      <div class="text-white">
+        <section class="flex space-between align-center bg-orange py-16 px-40">
+          <div>
+            <h4>
+              Over 50 stores registered with us
+            </h4>
+            <p class="py-16">
+              Find a store near you using our filtered search engine
+            </p>
+            <button type="button" class="py-8 px-8 bg-white bold">
+              Find a store
+            </button>
+          </div>
+          <img
+            class="round"
+            src="./images/map.jpg"
+            width="240"
+            height="240"
+            alt="map image"
+          />
+        </section>
+        <section class="flex space-between align-center bg-gray py-16 px-40">
+          <div>
+            <h4>
+              Over 50 stores registered with us
+            </h4>
+            <p class="py-16">
+              Renowned for selling the most exotic guitars
+            </p>
+            <button type="button" class="py-8 px-8 bg-white bold">
+              Find a store near you
+            </button>
+          </div>
+          <img
+            class="round"
+            src="./images/guitar2.jpg"
+            width="240"
+            height="240"
+            alt="guitar image"
+          />
+        </section>
+        <section class="flex space-between align-center bg-blue py-16 px-40">
+          <div>
+            <h4>
+              Over 50 stores registered with us
+            </h4>
+            <p class="py-16">
+              Find a store near you using our filtered search engine
+            </p>
+          </div>
+          <img src="./images/phone.png" width="240" alt="phone image" />
+        </section>
+      </div>
     </main>
   </body>
 </html>

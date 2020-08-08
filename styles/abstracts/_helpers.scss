@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+
+  button,
+  input {
+    border: none;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.grid {
+  display: grid;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.space-evenly {
+  justify-content: space-evenly;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.round {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+$red: #d35649;
+// $orange: #d75545;
+$orange: #e17e65;
+$light-orange: #e06b4b;
+$gray: #98a4a5;
+$blue: #509bd7;
+$white: #ffffff;
+$black: #000000;
+$dark: #1f1f1f;
+$light-gray: #f7f7f7;
+$dark-gray: #3d3d3d;
+
+@mixin col-($value) {
+  grid-template-columns: repeat($value, 1fr);
+}
+
+@mixin bg-($color) {
+  background: $color;
+}
+
+@mixin text-($color) {
+  color: $color;
+}
+
+@mixin px-($left, $right) {
+  padding-left: $left;
+  padding-right: $right;
+}
+
+@mixin mx-($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin py-($top, $bottom) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+@mixin my-($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin w-($value) {
+  width: $value;
+}
+
+@mixin border($size, $color) {
+  border: $size solid $color;
+}
+
+@mixin border-y($size, $color) {
+  border-top: $size solid $color;
+  border-bottom: $size solid $color;
+}
+
+@mixin icon-border($size) {
+  width: $size;
+  line-height: $size;
+  border-radius: $size/2;
+  text-align: center;
+}
+
+@mixin desktop {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}

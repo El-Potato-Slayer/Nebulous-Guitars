@@ -1,6 +1,11 @@
 #details-main {
   @include mx-(40px, 40px);
   @include my-(80px, 80px);
+
+  & > p {
+    @include my-(32px, 32px);
+  }
+
   section {
     @include px-(24px, 24px);
     @include py-(24px, 16px);
@@ -24,10 +29,6 @@
           color: $blue;
         }
       }
-    }
-
-    & > p {
-      @include my-(32px, 32px);
     }
 
     div.grid {

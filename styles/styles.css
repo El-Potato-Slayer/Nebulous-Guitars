@@ -584,6 +584,10 @@ footer > div:last-child p > a:hover {
   margin-top: 80px;
   margin-bottom: 80px;
 }
+#details-main > p {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 #details-main section {
   padding-left: 24px;
   padding-right: 24px;
@@ -608,10 +612,6 @@ footer > div:last-child p > a:hover {
 }
 #details-main section address p i {
   color: #509bd7;
-}
-#details-main section > p {
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 #details-main section div.grid {
   grid-template-columns: repeat(2, 1fr);

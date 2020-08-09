@@ -143,32 +143,6 @@ footer {
   color: #fff;
   background: #000;
 }
-footer > div:last-child {
-  background-color: #1f1f1f;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 24px;
-  padding-bottom: 32px;
-  color: #98a4a5;
-}
-footer > div:last-child a {
-  padding-left: 8px;
-  padding-right: 8px;
-  color: #98a4a5;
-}
-footer > div:last-child a i {
-  transition: all 0.2s ease-in-out;
-}
-footer > div:last-child a i:hover {
-  transform: scale(1.3);
-  color: #f7f7f7;
-}
-footer > div:last-child p > a {
-  color: #f7f7f7;
-}
-footer > div:last-child p > a:hover {
-  text-decoration: underline;
-}
 footer > div:nth-child(2) {
   padding-left: 80px;
   padding-right: 80px;
@@ -216,6 +190,32 @@ footer > div:nth-child(2) form button {
 footer > div:nth-child(2) form button:hover {
   background-color: #98a4a5;
   color: #1f1f1f;
+}
+footer > div:last-child {
+  background-color: #1f1f1f;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+  color: #98a4a5;
+}
+footer > div:last-child a {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #98a4a5;
+}
+footer > div:last-child a i {
+  transition: all 0.2s ease-in-out;
+}
+footer > div:last-child a i:hover {
+  transform: scale(1.3);
+  color: #f7f7f7;
+}
+footer > div:last-child p > a {
+  color: #f7f7f7;
+}
+footer > div:last-child p > a:hover {
+  text-decoration: underline;
 }
 footer > div:first-child {
   padding-left: 80px;

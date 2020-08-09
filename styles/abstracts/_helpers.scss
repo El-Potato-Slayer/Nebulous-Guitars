@@ -91,7 +91,8 @@ body {
 }
 
 .card {
-  background: url(../images/guitar-card.png),
+  background: 
+    url(../images/guitar-card.png),
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: overlay;
   height: 400px;

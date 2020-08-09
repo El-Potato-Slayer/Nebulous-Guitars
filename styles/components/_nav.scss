@@ -1,5 +1,6 @@
 nav {
   font-family: "Roboto", sans-serif;
+
   @include px-(40px, 40px);
   @include bg-($red);
 
@@ -14,6 +15,7 @@ nav {
     a {
       @include px-(8px, 8px);
       @include text-($white);
+
       transition: all 0.2s ease-in-out;
 
       i {
@@ -39,6 +41,7 @@ nav {
 @include tablet {
   nav {
     flex-direction: column;
+
     div {
       width: 200px;
     }

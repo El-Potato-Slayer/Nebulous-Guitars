@@ -36,18 +36,22 @@
 
     div {
       @include py-(4px, 4px);
+
       input {
         @include w-(75%);
       }
+
       input:focus {
         border: 1px solid $blue;
-        box-shadow: 0px 0px 8px $blue;
+        box-shadow: 0 0 8px $blue;
       }
+
       button {
         @include bg-($red);
         margin-left: -2px;
         @include w-(96px);
       }
+
       button:hover {
         background-color: #db200b;
       }
@@ -56,29 +60,14 @@
 
   a {
     @include text-($black);
+
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
   }
 
   a:hover {
     transform: scale(1.1);
-    background-color: #eeeeee;
-  }
-}
-
-@include desktop {
-  #index-header {
-    form {
-      width: 75%;
-    }
-  }
-}
-
-@include tablet {
-  #index-header {
-    form {
-      width: 100%;
-    }
+    background-color: #eee;
   }
 }
 
@@ -86,9 +75,11 @@
   & > section {
     @include px-(80px, 80px);
     @include py-(80px, 80px);
+
     h3 {
       @include text-($light-orange);
       @include py-(0, 40px);
+
       font-size: 30px;
     }
 
@@ -107,19 +98,23 @@
 
   & > div {
     @include text-($white);
+
     section {
       @include py-(32px, 32px);
       @include px-(40px, 40px);
+
       div {
         p {
           @include py-(16px, 16px);
         }
       }
+
       button {
         @include my-(16px, 16px);
         @include py-(8px, 8px);
         @include px-(8px, 8px);
         @include bg-($white);
+
         transition: all 0.2s ease-in-out;
       }
 
@@ -130,18 +125,20 @@
 
     section:nth-last-child(n + 2) {
       img {
-        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
       }
     }
 
     section:first-child {
       @include bg-($light-orange);
+
       button {
         @include text-($light-orange);
       }
     }
     section:nth-child(2) {
       @include bg-($gray);
+
       button {
         @include text-($gray);
       }
@@ -158,9 +155,16 @@
       h3 {
         font-size: 25px;
       }
+
       div {
         grid-gap: 80px;
       }
+    }
+  }
+
+  #index-header {
+    form {
+      width: 75%;
     }
   }
 }
@@ -169,15 +173,23 @@
   #index-main {
     & > section:first-child {
       padding: 64px 24px;
+
       div {
         grid-template-columns: 1fr;
       }
     }
+
     div {
       section {
         flex-direction: column;
         text-align: center;
       }
+    }
+  }
+
+  #index-header {
+    form {
+      width: 100%;
     }
   }
 }

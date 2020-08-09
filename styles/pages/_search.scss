@@ -1,36 +1,46 @@
 #search-main {
   form {
     background: $mid-light-gray;
+
     @include px-(56px, 56px);
     @include py-(48px, 64px);
     @include my-(48px, 48px);
+
     h2 {
       @include my-(0, 32px);
+
       color: $gray;
     }
+
     div {
       div {
         @include mx-(4px, 4px);
+
         label {
           font-size: 14px;
         }
+
         input {
           border: 1px solid $gray;
           border-radius: 3px;
+
           @include px-(8px, 8px);
           @include py-(5px, 5px);
           @include my-(4px, 0);
         }
+
         input:focus {
           border: 1px solid $blue;
-          box-shadow: 0px 0px 4px $blue;
+          box-shadow: 0 0 4px $blue;
         }
       }
+
       button {
-        align-self: flex-end;
         @include mx-(4px, 4px);
         @include px-(12px, 12px);
         @include py-(6px, 6px);
+
+        align-self: flex-end;
         border-radius: 3px;
         color: $white;
         transition: all 0.2s ease-in-out;
@@ -54,6 +64,7 @@
   & > p {
     font-size: 35px;
     color: $gray;
+
     @include my-(0, 40px);
   }
 
@@ -61,7 +72,9 @@
     @include col-(3);
     @include px-(80px, 80px);
     @include my-(0, 80px);
+
     grid-gap: 56px 24px;
+
     a {
       height: 100%;
       width: 100%;
@@ -83,10 +96,12 @@
   #search-main {
     form {
       @include px-(40px, 40px);
+
       h2 {
         font-size: 20px;
       }
     }
+
     div.grid {
       @include col-(2);
     }
@@ -99,15 +114,20 @@
       & > div {
         flex-direction: column;
         align-items: center;
+
         div {
           @include my-(8px, 8px);
+
           text-align: center;
+
           input {
             width: 100%;
           }
         }
+
         button {
           align-self: center;
+
           @include my-(8px, 8px);
         }
       }

@@ -114,7 +114,7 @@ nav > div {
 nav > div a {
   padding-left: 8px;
   padding-right: 8px;
-  color: #ffffff;
+  color: #fff;
   transition: all 0.2s ease-in-out;
 }
 nav > div a i {
@@ -140,31 +140,25 @@ nav > div a:hover {
   }
 }
 footer {
-  color: #ffffff;
-  background: #000000;
+  color: #fff;
+  background: #000;
 }
 footer > div:first-child {
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 40px;
   padding-bottom: 40px;
-  color: #ffffff;
+  color: #fff;
 }
 footer > div:first-child a {
   padding-top: 16px;
   padding-bottom: 16px;
-  color: #ffffff;
+  color: #fff;
   transition: all 0.2s ease-in-out;
 }
 footer > div:first-child a:hover {
   transform: scale(1.2);
   text-decoration: underline;
-}
-footer > div:first-child div:first-child {
-  border-top: 1px solid #3d3d3d;
-  border-bottom: 1px solid #3d3d3d;
-  width: 45%;
-  margin-right: -5px;
 }
 footer > div:first-child div:nth-child(2) {
   font-size: 3em;
@@ -173,6 +167,12 @@ footer > div:first-child div:nth-child(2) {
   border-radius: 1.5em;
   text-align: center;
   border: 1px solid #3d3d3d;
+}
+footer > div:first-child div:first-child {
+  border-top: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+  width: 45%;
+  margin-right: -5px;
 }
 footer > div:first-child div:last-child {
   border-top: 1px solid #3d3d3d;
@@ -216,7 +216,7 @@ footer > div:nth-child(2) form input {
   border: 1px solid #3d3d3d;
 }
 footer > div:nth-child(2) form input:focus {
-  box-shadow: 0px 0px 4px #ffffff;
+  box-shadow: 0 0 4px #fff;
 }
 footer > div:nth-child(2) form button {
   padding-left: 40px;
@@ -224,7 +224,7 @@ footer > div:nth-child(2) form button {
   padding-top: 8px;
   padding-bottom: 8px;
   background: #3d3d3d;
-  color: #ffffff;
+  color: #fff;
   transition: all 0.2s ease-in-out;
 }
 footer > div:nth-child(2) form button:hover {
@@ -313,7 +313,7 @@ footer > div:last-child p > a:hover {
 #index-header h1,
 #index-header h2,
 #index-header button {
-  color: #ffffff;
+  color: #fff;
 }
 #index-header form,
 #index-header a {
@@ -343,7 +343,7 @@ footer > div:last-child p > a:hover {
 }
 #index-header form div input:focus {
   border: 1px solid #509bd7;
-  box-shadow: 0px 0px 8px #509bd7;
+  box-shadow: 0 0 8px #509bd7;
 }
 #index-header form div button {
   background: #d35649;
@@ -354,25 +354,15 @@ footer > div:last-child p > a:hover {
   background-color: #db200b;
 }
 #index-header a {
-  color: #000000;
+  color: #000;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
 }
 #index-header a:hover {
   transform: scale(1.1);
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
-@media (max-width: 1024px) {
-  #index-header form {
-    width: 75%;
-  }
-}
-@media (max-width: 768px) {
-  #index-header form {
-    width: 100%;
-  }
-}
 #index-main > section {
   padding-left: 80px;
   padding-right: 80px;
@@ -387,7 +377,7 @@ footer > div:last-child p > a:hover {
 }
 #index-main > section div {
   grid-template-columns: repeat(2, 1fr);
-  color: #000000;
+  color: #000;
   grid-gap: 80px 240px;
 }
 #index-main > section div div h4 {
@@ -395,7 +385,7 @@ footer > div:last-child p > a:hover {
   padding-bottom: 24px;
 }
 #index-main > div {
-  color: #ffffff;
+  color: #fff;
 }
 #index-main > div section {
   padding-top: 32px;
@@ -414,14 +404,14 @@ footer > div:last-child p > a:hover {
   padding-bottom: 8px;
   padding-left: 8px;
   padding-right: 8px;
-  background: #ffffff;
+  background: #fff;
   transition: all 0.2s ease-in-out;
 }
 #index-main > div section button:hover {
   transform: scale(1.1);
 }
 #index-main > div section:nth-last-child(n+2) img {
-  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
 }
 #index-main > div section:first-child {
   background: #e06b4b;
@@ -446,6 +436,10 @@ footer > div:last-child p > a:hover {
   #index-main > section div {
     grid-gap: 80px;
   }
+
+  #index-header form {
+    width: 75%;
+  }
 }
 @media (max-width: 768px) {
   #index-main > section:first-child {
@@ -458,9 +452,13 @@ footer > div:last-child p > a:hover {
     flex-direction: column;
     text-align: center;
   }
+
+  #index-header form {
+    width: 100%;
+  }
 }
 #search-main form {
-  background: #eeeeee;
+  background: #eee;
   padding-left: 56px;
   padding-right: 56px;
   padding-top: 48px;
@@ -492,18 +490,18 @@ footer > div:last-child p > a:hover {
 }
 #search-main form div div input:focus {
   border: 1px solid #509bd7;
-  box-shadow: 0px 0px 4px #509bd7;
+  box-shadow: 0 0 4px #509bd7;
 }
 #search-main form div button {
-  align-self: flex-end;
   margin-left: 4px;
   margin-right: 4px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 6px;
   padding-bottom: 6px;
+  align-self: flex-end;
   border-radius: 3px;
-  color: #ffffff;
+  color: #fff;
   transition: all 0.2s ease-in-out;
 }
 #search-main form div #search {
@@ -535,7 +533,7 @@ footer > div:last-child p > a:hover {
 #search-main div.grid a {
   height: 100%;
   width: 100%;
-  color: #ffffff;
+  color: #fff;
 }
 #search-main div.grid div.card {
   box-shadow: -4px 15px 5px 2px rgba(0, 0, 0, 0.5);
@@ -591,13 +589,29 @@ footer > div:last-child p > a:hover {
   padding-right: 24px;
   padding-top: 24px;
   padding-bottom: 16px;
-  box-shadow: 0px 0px 10px #98a4a5;
+  box-shadow: 0 0 10px #98a4a5;
 }
 #details-main section h1 {
-  color: #e17e65;
   margin-top: 8px;
   margin-bottom: 16px;
+  color: #e17e65;
   font-size: 30px;
+}
+#details-main section address {
+  font-style: normal;
+}
+#details-main section address p {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#details-main section address p i {
+  color: #509bd7;
+}
+#details-main section > p {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 #details-main section div.grid {
   grid-template-columns: repeat(2, 1fr);
@@ -622,7 +636,7 @@ footer > div:last-child p > a:hover {
   margin-bottom: 8px;
   border-radius: 4px;
   background-color: #509bd7;
-  color: #ffffff;
+  color: #fff;
   transition: all 0.2s ease-in-out;
 }
 #details-main section button:hover {
@@ -632,24 +646,8 @@ footer > div:last-child p > a:hover {
   padding-top: 12px;
   padding-bottom: 12px;
 }
-#details-main section address {
-  font-style: normal;
-}
-#details-main section address p {
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-#details-main section address p i {
-  color: #509bd7;
-}
-#details-main > p {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
 #details-main > div {
-  background: #eeeeee;
+  background: #eee;
 }
 #details-main > div a {
   padding-top: 24px;

@@ -90,17 +90,31 @@ body {
   object-fit: cover;
 }
 
+.card {
+  background: url(../../images/guitar-card.png),
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  height: 400px;
+  width: 267px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
 $red: #d35649;
 // $orange: #d75545;
 $orange: #e17e65;
 $light-orange: #e06b4b;
 $gray: #98a4a5;
 $blue: #509bd7;
+$ocean-blue: #457db4;
 $white: #ffffff;
 $black: #000000;
 $dark: #1f1f1f;
 $light-gray: #f7f7f7;
+$mid-light-gray: #eeeeee;
 $dark-gray: #3d3d3d;
+$yellow: #e5ac5b;
 
 @mixin col-($value) {
   grid-template-columns: repeat($value, 1fr);

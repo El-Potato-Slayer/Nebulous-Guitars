@@ -87,6 +87,16 @@ body button:hover {
   object-fit: cover;
 }
 
+.card {
+  background: url(../../images/guitar-card.png), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  height: 400px;
+  width: 267px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
 nav {
   font-family: "Roboto", sans-serif;
   padding-left: 40px;
@@ -440,6 +450,120 @@ footer > div:last-child p > a:hover {
   #index-main div section {
     flex-direction: column;
     text-align: center;
+  }
+}
+#search-main form {
+  background: #eeeeee;
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+#search-main form h2 {
+  margin-top: 0;
+  margin-bottom: 32px;
+  color: #98a4a5;
+}
+#search-main form div div {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+#search-main form div div label {
+  font-size: 14px;
+}
+#search-main form div div input {
+  border: 1px solid #98a4a5;
+  border-radius: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+#search-main form div div input:focus {
+  border: 1px solid #509bd7;
+  box-shadow: 0px 0px 4px #509bd7;
+}
+#search-main form div button {
+  align-self: flex-end;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 3px;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+#search-main form div #search {
+  background-color: #457db4;
+}
+#search-main form div #filter {
+  background: #e5ac5b;
+}
+#search-main form div #search:hover {
+  background: #0c5cac;
+}
+#search-main form div #filter:hover {
+  background: #e0880d;
+}
+#search-main > p {
+  font-size: 35px;
+  color: #98a4a5;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+#search-main div.grid {
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 0;
+  margin-bottom: 80px;
+  grid-gap: 56px 24px;
+}
+#search-main div.grid p {
+  color: #ffffff;
+}
+#search-main div.grid div.card {
+  box-shadow: 0px 15px 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1024px) {
+  #search-main form {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #search-main form h2 {
+    font-size: 20px;
+  }
+  #search-main div.grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  #search-main form > div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #search-main form > div div {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  #search-main form > div div input {
+    width: 100%;
+  }
+  #search-main form > div button {
+    align-self: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  #search-main div.grid {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 

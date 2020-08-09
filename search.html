@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nebulous Guitars</title>
+  </head>
+  <body>
+    <nav class="flex space-between align-center uppercase bold">
+      <a href="index.html">
+        <img src="images/logo2.png" alt="logo" />
+      </a>
+      <div class="flex space-between align-center">
+        <a href="#">
+          <i class="fa fa-search"></i>
+          <span>Stores</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-user-o"></i>
+          <span>About</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-wifi"></i>
+          <span>Blog</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-bars px-4"></i>
+          <span>More</span>
+        </a>
+      </div>
+    </nav>
+
+    <main id="search-main" class="text-center">
+      <form class="text-center">
+        <h2>Filter by area name and search radius:</h2>
+        <div class="flex text-left justify-center">
+          <div class="flex flex-column">
+            <label class="uppercase bold" for="area">Area name:</label>
+            <input type="text" name="area" />
+          </div>
+          <div class="flex flex-column">
+            <label class="uppercase bold" for="radius">Search radius:</label>
+            <input type="text" name="radius" />
+          </div>
+          <button id="search" type="button" class="bold">Search</button>
+          <button id="filter" type="button" class="bold">Clear Filter</button>
+        </div>
+      </form>
+
+      <p class="bold">Search Results Found 3 Store(s)</p>
+      <div class="grid justify-center">
+        <div class="card flex align-center mx-auto">
+          <p>
+            Address: 12 Swagger Bagger Ave &nbsp; Number: 123456789
+          </p>
+        </div>
+        <div class="card flex align-center mx-auto">
+          <p>
+            Address: 12 Swagger Bagger Ave &nbsp; Number: 123456789
+          </p>
+        </div>
+        <div class="card flex align-center mx-auto">
+          <p>
+            Address: 12 Swagger Bagger Ave &nbsp; Number: 123456789
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="flex space-around align-center bold uppercase">
+        <div class="flex space-around">
+          <a href="#">Home</a>
+          <a href="#">Search</a>
+          <a href="#">About Us</a>
+          <a href="#">Advertise</a>
+        </div>
+        <div>
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="flex space-around">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Blog</a>
+          <a href="#">Google</a>
+        </div>
+      </div>
+      <div class="grid">
+        <section class="text-center">
+          <h3 class="uppercase">Subscribe</h3>
+          <form class="flex justify-center">
+            <input type="email" placeholder="you@example.com" />
+            <button type="button">
+              Send
+            </button>
+          </form>
+        </section>
+        <section class="text-center">
+          <h3 class="uppercase">Contact</h3>
+          <p>Have a question or submission?</p>
+          <a href="#">info@nebulousguitars.com</a>
+        </section>
+        <section class="text-center">
+          <h3 class="uppercase">About</h3>
+          <p>
+            Nebulous Guitars is a franchise which boasts more than 40 000 stores
+            all over the world. With our website, you'll be able to find the
+            nearest store near you
+            <a href="#">Learn more...</a>
+          </p>
+        </section>
+      </div>
+      <div class="flex space-between text-center">
+        <div>
+          <a href="#">
+            <i class="fa fa-facebook fa-lg"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter fa-lg"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-pinterest fa-lg"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-tumblr fa-lg"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram fa-lg"></i>
+          </a>
+        </div>
+        <p>
+          © 2020 Nebulous Guitars is a Trademark of
+          <a href="#">Swagger Bagger LLC</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

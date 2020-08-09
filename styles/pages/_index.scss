@@ -1,76 +1,3 @@
-#index-header {
-  @include px-(16px, 16px);
-  @include py-(40px, 40px);
-
-  height: 440px;
-  background: url(../images/hero.png),
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  h1,
-  h2,
-  button {
-    @include text-($white);
-  }
-
-  form,
-  a {
-    background: rgba($color: #eeeeee, $alpha: 0.8);
-  }
-
-  input,
-  a {
-    @include px-(8px, 8px);
-    @include py-(8px, 8px);
-  }
-
-  form {
-    @include w-(60%);
-    @include px-(24px, 24px);
-    @include py-(40px, 40px);
-
-    border-radius: 8px;
-
-    div {
-      @include py-(4px, 4px);
-
-      input {
-        @include w-(75%);
-      }
-
-      input:focus {
-        border: 1px solid $blue;
-        box-shadow: 0 0 8px $blue;
-      }
-
-      button {
-        @include bg-($red);
-        margin-left: -2px;
-        @include w-(96px);
-      }
-
-      button:hover {
-        background-color: #db200b;
-      }
-    }
-  }
-
-  a {
-    @include text-($black);
-
-    border-radius: 4px;
-    transition: all 0.3s ease-in-out;
-  }
-
-  a:hover {
-    transform: scale(1.1);
-    background-color: #eee;
-  }
-}
-
 #index-main {
   & > section {
     @include px-(80px, 80px);
@@ -146,6 +73,80 @@
     section:last-child {
       @include bg-($blue);
     }
+  }
+}
+
+#index-header {
+  @include px-(16px, 16px);
+  @include py-(40px, 40px);
+
+  height: 440px;
+  background: url(../images/hero.png),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h1,
+  h2,
+  button {
+    @include text-($white);
+  }
+
+  form,
+  a {
+    background: rgba($color: #eee, $alpha: 0.8);
+  }
+
+  input,
+  a {
+    @include px-(8px, 8px);
+    @include py-(8px, 8px);
+  }
+
+  form {
+    @include w-(60%);
+    @include px-(24px, 24px);
+    @include py-(40px, 40px);
+
+    border-radius: 8px;
+
+    div {
+      @include py-(4px, 4px);
+
+      input {
+        @include w-(75%);
+      }
+
+      input:focus {
+        border: 1px solid $blue;
+        box-shadow: 0 0 8px $blue;
+      }
+
+      button {
+        @include bg-($red);
+        @include w-(96px);
+
+        margin-left: -2px;
+      }
+
+      button:hover {
+        background-color: #db200b;
+      }
+    }
+  }
+
+  a {
+    @include text-($black);
+
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    transform: scale(1.1);
+    background-color: #eee;
   }
 }
 

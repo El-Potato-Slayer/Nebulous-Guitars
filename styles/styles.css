@@ -143,46 +143,6 @@ footer {
   color: #fff;
   background: #000;
 }
-footer > div:first-child {
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  color: #fff;
-}
-footer > div:first-child a {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  color: #fff;
-  transition: all 0.2s ease-in-out;
-}
-footer > div:first-child a:hover {
-  transform: scale(1.2);
-  text-decoration: underline;
-}
-footer > div:first-child div:nth-child(2) {
-  font-size: 3em;
-  width: 3em;
-  line-height: 3em;
-  border-radius: 1.5em;
-  text-align: center;
-  border: 1px solid #3d3d3d;
-}
-footer > div:first-child div:first-child {
-  border-top: 1px solid #3d3d3d;
-  border-bottom: 1px solid #3d3d3d;
-  width: 45%;
-  margin-right: -5px;
-}
-footer > div:first-child div:last-child {
-  border-top: 1px solid #3d3d3d;
-  border-bottom: 1px solid #3d3d3d;
-  width: 45%;
-  margin-left: -5px;
-}
-footer > div:first-child section h3 {
-  letter-spacing: 5px;
-}
 footer > div:nth-child(2) {
   padding-left: 80px;
   padding-right: 80px;
@@ -257,16 +217,48 @@ footer > div:last-child p > a {
 footer > div:last-child p > a:hover {
   text-decoration: underline;
 }
+footer > div:first-child {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+}
+footer > div:first-child a {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+footer > div:first-child a:hover {
+  transform: scale(1.2);
+  text-decoration: underline;
+}
+footer > div:first-child div:nth-child(2) {
+  font-size: 3em;
+  width: 3em;
+  line-height: 3em;
+  border-radius: 1.5em;
+  text-align: center;
+  border: 1px solid #3d3d3d;
+}
+footer > div:first-child div:first-child {
+  border-top: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+  width: 45%;
+  margin-right: -5px;
+}
+footer > div:first-child div:last-child {
+  border-top: 1px solid #3d3d3d;
+  border-bottom: 1px solid #3d3d3d;
+  width: 45%;
+  margin-left: -5px;
+}
+footer > div:first-child section h3 {
+  letter-spacing: 5px;
+}
 
 @media (max-width: 1024px) {
-  footer > div:first-child {
-    padding-left: 20px;
-    padding-right: 20px;
-    flex-direction: column;
-  }
-  footer > div:first-child div:not(:nth-child(2)) {
-    width: 100%;
-  }
   footer > div:nth-child(2) {
     padding-left: 20px;
     padding-right: 20px;
@@ -279,17 +271,16 @@ footer > div:last-child p > a:hover {
     padding-bottom: 16px;
     letter-spacing: 5px;
   }
+  footer > div:first-child {
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+  }
+  footer > div:first-child div:not(:nth-child(2)) {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
-  footer > div:first-child div:not(:nth-child(2)) {
-    font-size: 14px;
-  }
-  footer > div:first-child div:nth-child(2) {
-    width: 1.5em;
-    line-height: 1.5em;
-    border-radius: 0.75em;
-    text-align: center;
-  }
   footer > div:last-child {
     flex-direction: column;
   }
@@ -297,72 +288,16 @@ footer > div:last-child p > a:hover {
     padding-top: 8px;
     padding-bottom: 0;
   }
+  footer > div:first-child div:nth-child(2) {
+    width: 1.5em;
+    line-height: 1.5em;
+    border-radius: 0.75em;
+    text-align: center;
+  }
+  footer > div:first-child div:not(:nth-child(2)) {
+    font-size: 14px;
+  }
 }
-#index-header {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  height: 440px;
-  background: url(../images/hero.png), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-  background-blend-mode: overlay;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#index-header h1,
-#index-header h2,
-#index-header button {
-  color: #fff;
-}
-#index-header form,
-#index-header a {
-  background: rgba(238, 238, 238, 0.8);
-}
-#index-header input,
-#index-header a {
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-#index-header form {
-  width: 60%;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-radius: 8px;
-}
-#index-header form div {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-#index-header form div input {
-  width: 75%;
-}
-#index-header form div input:focus {
-  border: 1px solid #509bd7;
-  box-shadow: 0 0 8px #509bd7;
-}
-#index-header form div button {
-  background: #d35649;
-  margin-left: -2px;
-  width: 96px;
-}
-#index-header form div button:hover {
-  background-color: #db200b;
-}
-#index-header a {
-  color: #000;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
-}
-#index-header a:hover {
-  transform: scale(1.1);
-  background-color: #eee;
-}
-
 #index-main > section {
   padding-left: 80px;
   padding-right: 80px;
@@ -427,6 +362,71 @@ footer > div:last-child p > a:hover {
 }
 #index-main > div section:last-child {
   background: #509bd7;
+}
+
+#index-header {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 440px;
+  background: url(../images/hero.png), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#index-header h1,
+#index-header h2,
+#index-header button {
+  color: #fff;
+}
+#index-header form,
+#index-header a {
+  background: rgba(238, 238, 238, 0.8);
+}
+#index-header input,
+#index-header a {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#index-header form {
+  width: 60%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 8px;
+}
+#index-header form div {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+#index-header form div input {
+  width: 75%;
+}
+#index-header form div input:focus {
+  border: 1px solid #509bd7;
+  box-shadow: 0 0 8px #509bd7;
+}
+#index-header form div button {
+  background: #d35649;
+  width: 96px;
+  margin-left: -2px;
+}
+#index-header form div button:hover {
+  background-color: #db200b;
+}
+#index-header a {
+  color: #000;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+#index-header a:hover {
+  transform: scale(1.1);
+  background-color: #eee;
 }
 
 @media (max-width: 1024px) {

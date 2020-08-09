@@ -11,6 +11,7 @@
     @include py-(24px, 16px);
 
     box-shadow: 0 0 10px $gray;
+
     h1 {
       @include my-(8px, 16px);
 
@@ -35,6 +36,7 @@
       @include col-(2);
 
       grid-gap: 8px;
+
       p {
         border: 1px solid $gray;
 
@@ -46,6 +48,7 @@
         }
       }
     }
+
     button {
       @include px-(6px, 6px);
       @include py-(8px, 8px);

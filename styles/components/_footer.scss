@@ -2,52 +2,6 @@ footer {
   @include text-($white);
   @include bg-($black);
 
-  & > div:first-child {
-    @include px-(80px, 80px);
-    @include py-(40px, 40px);
-    @include text-($white);
-
-    a {
-      @include py-(16px, 16px);
-      @include text-($white);
-
-      transition: all 0.2s ease-in-out;
-    }
-
-    a:hover {
-      transform: scale(1.2);
-      text-decoration: underline;
-    }
-
-    div:nth-child(2) {
-      font-size: 3em;
-
-      @include icon-border(3em);
-
-      border: 1px solid $dark-gray;
-    }
-
-    div:first-child {
-      @include border-y(1px, #3d3d3d);
-      @include w-(45%);
-
-      margin-right: -5px;
-    }
-
-    div:last-child {
-      @include border-y(1px, #3d3d3d);
-      @include w-(45%);
-
-      margin-left: -5px;
-    }
-
-    section {
-      h3 {
-        letter-spacing: 5px;
-      }
-    }
-  }
-
   & > div:nth-child(2) {
     @include px-(80px, 80px);
     @include py-(40px, 40px);
@@ -133,20 +87,56 @@ footer {
       }
     }
   }
+
+  & > div:first-child {
+    @include px-(80px, 80px);
+    @include py-(40px, 40px);
+    @include text-($white);
+
+    a {
+      @include py-(16px, 16px);
+      @include text-($white);
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    a:hover {
+      transform: scale(1.2);
+      text-decoration: underline;
+    }
+
+    div:nth-child(2) {
+      font-size: 3em;
+
+      @include icon-border(3em);
+
+      border: 1px solid $dark-gray;
+    }
+
+    div:first-child {
+      @include border-y(1px, #3d3d3d);
+      @include w-(45%);
+
+      margin-right: -5px;
+    }
+
+    div:last-child {
+      @include border-y(1px, #3d3d3d);
+      @include w-(45%);
+
+      margin-left: -5px;
+    }
+
+    section {
+      h3 {
+        letter-spacing: 5px;
+      }
+    }
+  }
 }
 
 @include desktop {
   footer {
-    & > div:first-child {
-      @include px-(20px, 20px);
-
-      flex-direction: column;
-
-      div:not(:nth-child(2)) {
-        width: 100%;
-      }
-    }
-
     & > div:nth-child(2) {
       @include px-(20px, 20px);
       @include py-(0, 40px);
@@ -158,26 +148,36 @@ footer {
         letter-spacing: 5px;
       }
     }
+
+    & > div:first-child {
+      @include px-(20px, 20px);
+
+      flex-direction: column;
+
+      div:not(:nth-child(2)) {
+        width: 100%;
+      }
+    }
   }
 }
 
 @include tablet {
   footer {
-    & > div:first-child {
-      div:not(:nth-child(2)) {
-        font-size: 14px;
-      }
-
-      div:nth-child(2) {
-        @include icon-border(1.5em);
-      }
-    }
-
     & > div:last-child {
       flex-direction: column;
 
       p {
         @include py-(8px, 0);
+      }
+    }
+
+    & > div:first-child {
+      div:nth-child(2) {
+        @include icon-border(1.5em);
+      }
+
+      div:not(:nth-child(2)) {
+        font-size: 14px;
       }
     }
   }

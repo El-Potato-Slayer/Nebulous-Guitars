@@ -49,12 +49,15 @@
       #search {
         background-color: $ocean-blue;
       }
+
       #filter {
         background: $yellow;
       }
+
       #search:hover {
         background: #0c5cac;
       }
+
       #filter:hover {
         background: #e0880d;
       }
@@ -82,12 +85,12 @@
     }
 
     div.card {
-      box-shadow: -4px 15px 5px 2px rgba($color: #000000, $alpha: 0.5);
+      box-shadow: -4px 15px 5px 2px rgba($color: #000, $alpha: 0.5);
       transition: all 0.2s ease-in-out;
     }
     div.card:hover {
       transform: scale(1.1);
-      box-shadow: -24px 30px 20px 2px rgba($color: #000000, $alpha: 0.5);
+      box-shadow: -24px 30px 20px 2px rgba($color: #000, $alpha: 0.5);
     }
   }
 }

@@ -88,7 +88,7 @@ body button:hover {
 }
 
 .card {
-  background: url(../../images/guitar-card.png), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background: url(../images/guitar-card.png), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: overlay;
   height: 400px;
   width: 267px;
@@ -304,7 +304,7 @@ footer > div:last-child p > a:hover {
   padding-top: 40px;
   padding-bottom: 40px;
   height: 440px;
-  background: url(../../images/hero.png), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background: url(../images/hero.png), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: overlay;
   background-position: center;
   background-size: cover;
@@ -578,6 +578,140 @@ footer > div:last-child p > a:hover {
   }
   #search-main div.grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+#details-main {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+#details-main section {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  box-shadow: 0px 0px 10px #98a4a5;
+}
+#details-main section h1 {
+  color: #e17e65;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+#details-main section div.grid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
+}
+#details-main section div.grid p {
+  border: 1px solid #98a4a5;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+#details-main section div.grid p span {
+  color: #457db4;
+}
+#details-main section button {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: #509bd7;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+#details-main section button:hover {
+  background: #457db4;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#details-main section address {
+  font-style: normal;
+}
+#details-main section address p {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+#details-main section address p i {
+  color: #509bd7;
+}
+#details-main > p {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+#details-main > div {
+  background: #eeeeee;
+}
+#details-main > div a {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+  display: block;
+  color: #3d3d3d;
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+#details-main > div:hover a {
+  color: #e17e65;
+}
+#details-main h2 {
+  color: #e17e65;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+#details-main iframe {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  #details-main section div.grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  #details-main {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  #details-main section {
+    padding-left: 12px;
+    padding-right: 12px;
+    text-align: center;
+  }
+  #details-main section h1 {
+    font-size: 24px;
+  }
+  #details-main section div.grid {
+    text-align: left;
+    font-size: 14px;
+  }
+  #details-main section address {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+  #details-main > div {
+    text-align: center;
+  }
+  #details-main > div a {
+    font-size: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  #details-main h2 {
+    font-size: 20px;
   }
 }
 

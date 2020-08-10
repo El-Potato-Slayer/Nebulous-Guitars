@@ -311,6 +311,9 @@ footer > div:first-child section h3 {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+#index-main > div section div h4 {
+  font-size: 20px;
+}
 #index-main > div section button {
   margin-top: 16px;
   margin-bottom: 16px;

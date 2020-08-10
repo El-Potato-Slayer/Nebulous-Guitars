@@ -10,6 +10,10 @@
         p {
           @include py-(16px, 16px);
         }
+
+        h4{
+          font-size: 20px;
+        }
       }
 
       button {

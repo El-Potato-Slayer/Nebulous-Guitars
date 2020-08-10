@@ -106,6 +106,8 @@ nav {
 nav img {
   width: 200px;
   filter: invert(1);
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 nav > div {
   padding-top: 8px;

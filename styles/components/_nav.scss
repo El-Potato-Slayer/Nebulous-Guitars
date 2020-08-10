@@ -7,6 +7,8 @@ nav {
   img {
     width: 200px;
     filter: invert(1);
+
+    @include my-(8px, 4px);
   }
 
   & > div {

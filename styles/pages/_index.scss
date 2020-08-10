@@ -57,24 +57,24 @@
     }
   }
 
-  & > section {
+  & > .index_main_top {
     @include px-(80px, 80px);
     @include py-(80px, 80px);
 
-    h3 {
+    .index_top_header {
       @include text-($light-orange);
       @include py-(0, 40px);
 
       font-size: 30px;
     }
 
-    div {
+    .index_top_grid {
       @include col-(2);
       @include text-($black);
 
       grid-gap: 80px 240px;
 
-      div {
+      .index_grid_item {
         h4 {
           @include py-(24px, 24px);
         }
@@ -96,9 +96,9 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  h1,
-  h2,
-  button {
+  .index_header_heading,
+  .index_header_subheading,
+  .input_button_wrapper_button {
     @include text-($white);
   }
 
@@ -120,26 +120,26 @@
 
     border-radius: 8px;
 
-    div {
+    .input_button_wrapper {
       @include py-(4px, 4px);
 
-      input {
+      .input_button_wrapper_input {
         @include w-(75%);
       }
 
-      input:focus {
+      .input_button_wrapper_input:focus {
         border: 1px solid $blue;
         box-shadow: 0 0 8px $blue;
       }
 
-      button {
+      .input_button_wrapper_button {
         @include bg-($red);
         @include w-(96px);
 
         margin-left: -2px;
       }
 
-      button:hover {
+      .input_button_wrapper_button:hover {
         background-color: #db200b;
       }
     }
@@ -160,12 +160,12 @@
 
 @include desktop {
   #index-main {
-    & > section {
-      h3 {
+    & > .index_main_top {
+      .index_top_header {
         font-size: 25px;
       }
 
-      div {
+      .index_top_grid {
         grid-gap: 80px;
       }
     }
@@ -180,10 +180,10 @@
 
 @include tablet {
   #index-main {
-    & > section:first-child {
+    & > .index_main_top {
       padding: 64px 24px;
 
-      div {
+      .index_top_grid {
         grid-template-columns: 1fr;
       }
     }

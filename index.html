@@ -43,13 +43,13 @@
       id="index-header"
       class="flex text-center space-around align-center flex-column"
     >
-      <h1 class="text-white">Nebulous Guitars</h1>
-      <h2 class="text-white">Your ticket to guitars out of this world</h2>
-      <form class="text-left">
+      <h1 class="index_header_heading text-white">Nebulous Guitars</h1>
+      <h2 class="index_header_subheading text-white">Your ticket to guitars out of this world</h2>
+      <form class="index_header_form text-left">
         <label for="search" class="bold uppercase">Search by key word</label>
-        <div class="flex">
-          <input type="text" id="search" name="search" />
-          <button
+        <div class="input_button_wrapper flex">
+          <input class="input_button_wrapper_input" type="text" id="search" name="search" />
+          <button class="input_button_wrapper_button"
             class="text-white bold uppercase"
             type="button"
             onclick="location.href = 'search.html';"
@@ -62,12 +62,12 @@
     </header>
 
     <main id="index-main">
-      <section class="text-center">
-        <h3>
+      <section class="index_main_top text-center">
+        <h3 class="index_top_header">
           Get your guitar in 4 simple steps
         </h3>
-        <div class="grid">
-          <div>
+        <div class="index_top_grid grid">
+          <section class="index_grid_item">
             <i class="fa fa-eye fa-4x"></i>
             <h4 class="uppercase">1- Search</h4>
             <p>
@@ -75,8 +75,8 @@
               on the search button and you will be directed to a page with all
               the stores within or closest to your area.
             </p>
-          </div>
-          <div>
+          </section>
+          <section class="index_grid_item">
             <i class="fa fa-map-o fa-4x"></i>
             <h4 class="uppercase">2- Locate</h4>
             <p>
@@ -84,8 +84,8 @@
               store details including contact details, address and a map, which
               is able to give you real-time directions.
             </p>
-          </div>
-          <div>
+          </section>
+          <section class="index_grid_item">
             <i class="fa fa-fire fa-4x"></i>
             <h4 class="uppercase">3- Choose</h4>
             <p>
@@ -94,8 +94,8 @@
               If none of the guitars live up to your amount of swag, don't
               worry. You're able to order custom-made guitars as well!
             </p>
-          </div>
-          <div>
+          </section>
+          <section class="index_grid_item">
             <i class="fa fa-eye fa-4x"></i>
             <h4 class="uppercase">4- Shred</h4>
             <p>
@@ -104,10 +104,10 @@
               neighbor who can't keep their dogs quiet! (Nebulous Guitars is not
               liable for any injuries done to your neighbors)
             </p>
-          </div>
+          </section>
         </div>
       </section>
-      <div class="text-white">
+      <div class="index_main_bottom text-white">
         <section class="flex space-between align-center just">
           <div>
             <h4>
@@ -163,70 +163,72 @@
     </main>
 
     <footer>
-      <div class="flex space-around align-center bold uppercase">
-        <div class="flex space-around">
-          <a href="#">Home</a>
-          <a href="#">Search</a>
-          <a href="#">About Us</a>
-          <a href="#">Advertise</a>
+      <div class="footer_top flex space-around align-center bold uppercase">
+        <div class="footer_top_left flex space-around">
+          <a class="footer_top_link" href="#">Home</a>
+          <a class="footer_top_link" href="#">Search</a>
+          <a class="footer_top_link" href="#">About Us</a>
+          <a class="footer_top_link" href="#">Advertise</a>
         </div>
-        <div>
+        <div class="footer_top_middle">
           <i class="fa fa-map-marker"></i>
         </div>
-        <div class="flex space-around">
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-          <a href="#">Blog</a>
-          <a href="#">Google</a>
+        <div class="footer_top_right flex space-around">
+          <a class="footer_top_link" href="#">Facebook</a>
+          <a class="footer_top_link" href="#">Twitter</a>
+          <a class="footer_top_link" href="#">Blog</a>
+          <a class="footer_top_link" href="#">Google</a>
         </div>
       </div>
-      <div class="grid">
-        <section class="text-center">
-          <h3 class="uppercase">Subscribe</h3>
-          <form class="flex justify-center">
+      <div class="footer_middle grid">
+        <section class="footer_middle_left text-center">
+          <h3 class="footer_middle_header uppercase">Subscribe</h3>
+          <form class="footer_middle_form flex justify-center">
             <input type="email" placeholder="you@example.com" />
             <button type="button">
               Send
             </button>
           </form>
         </section>
-        <section class="text-center">
-          <h3 class="uppercase">Contact</h3>
-          <p>Have a question or submission?</p>
-          <a href="#">info@nebulousguitars.com</a>
+        <section class="footer_middle_middle text-center">
+          <h3 class="footer_middle_header uppercase">Contact</h3>
+          <p class="footer_middle_par">Have a question or submission?</p>
+          <a href="#" class="footer_middle_link">info@nebulousguitars.com</a>
         </section>
-        <section class="text-center">
-          <h3 class="uppercase">About</h3>
-          <p>
+        <section class="footer_middle_right text-center">
+          <h3 class="footer_middle_header uppercase">About</h3>
+          <p class="footer_middle_par">
             Nebulous Guitars is a franchise which boasts more than 40 000 stores
             all over the world. With our website, you'll be able to find the
             nearest store near you
-            <a href="#">Learn more...</a>
+            <a href="#" class="footer_middle_link">Learn more...</a>
           </p>
         </section>
       </div>
-      <div class="flex space-between text-center">
-        <div>
-          <a href="#">
+      <div class="footer_bottom flex space-between text-center">
+        <div class="footer_bottom_left">
+          <a href="#" class="footer_bottom_link">
             <i class="fa fa-facebook fa-lg"></i>
           </a>
-          <a href="#">
+          <a href="#" class="footer_bottom_link">
             <i class="fa fa-twitter fa-lg"></i>
           </a>
-          <a href="#">
+          <a href="#" class="footer_bottom_link">
             <i class="fa fa-pinterest fa-lg"></i>
           </a>
-          <a href="#">
+          <a href="#" class="footer_bottom_link">
             <i class="fa fa-tumblr fa-lg"></i>
           </a>
-          <a href="#">
+          <a href="#" class="footer_bottom_link">
             <i class="fa fa-instagram fa-lg"></i>
           </a>
         </div>
-        <p>
-          © 2020 Nebulous Guitars is a Trademark of
-          <a href="#">Swagger Bagger LLC</a>
-        </p>
+        <div class="footer_bottom_right">
+          <p class="footer_bottom_par">
+            © 2020 Nebulous Guitars is a Trademark of
+            <a href="#">Swagger Bagger LLC</a>
+          </p>
+        </div>
       </div>
     </footer>
   </body>

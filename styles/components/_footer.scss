@@ -2,26 +2,72 @@ footer {
   @include text-($white);
   @include bg-($black);
 
-  & > div:nth-child(2) {
+  & > .footer_top {
+    @include px-(80px, 80px);
+    @include py-(40px, 40px);
+    @include text-($white);
+
+    .footer_top_link {
+      @include py-(16px, 16px);
+      @include text-($white);
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    .footer_top_link:hover {
+      transform: scale(1.2);
+      text-decoration: underline;
+    }
+
+    .footer_top_middle {
+      font-size: 3em;
+
+      @include icon-border(3em);
+
+      border: 1px solid $dark-gray;
+    }
+
+    .footer_top_left {
+      @include border-y(1px, #3d3d3d);
+      @include w-(45%);
+
+      margin-right: -5px;
+    }
+
+    .footer_top_right {
+      @include border-y(1px, #3d3d3d);
+      @include w-(45%);
+
+      margin-left: -5px;
+    }
+
+    section {
+      h3 {
+        letter-spacing: 5px;
+      }
+    }
+  }
+
+  & > .footer_middle {
     @include px-(80px, 80px);
     @include py-(40px, 40px);
     @include col-(3);
 
-    h3 {
+    .footer_middle_header {
       @include py-(40px, 40px);
 
       letter-spacing: 5px;
     }
 
-    a {
+    .footer_middle_link {
       color: $light-orange;
     }
 
-    a:hover {
+    .footer_middle_link:hover {
       text-decoration: underline;
     }
 
-    form {
+    .footer_middle_form {
       @include py-(4px, 4px);
 
       input {
@@ -54,7 +100,7 @@ footer {
     }
   }
 
-  & > div:last-child {
+  & > .footer_bottom {
     background-color: $dark;
 
     @include px-(24px, 24px);
@@ -62,7 +108,7 @@ footer {
 
     color: $gray;
 
-    a {
+    .footer_bottom_link {
       @include px-(8px, 8px);
 
       color: $gray;
@@ -77,7 +123,7 @@ footer {
       }
     }
 
-    p {
+    .footer_bottom_par {
       & > a {
         color: $light-gray;
       }
@@ -87,69 +133,23 @@ footer {
       }
     }
   }
-
-  & > div:first-child {
-    @include px-(80px, 80px);
-    @include py-(40px, 40px);
-    @include text-($white);
-
-    a {
-      @include py-(16px, 16px);
-      @include text-($white);
-
-      transition: all 0.2s ease-in-out;
-    }
-
-    a:hover {
-      transform: scale(1.2);
-      text-decoration: underline;
-    }
-
-    div:nth-child(2) {
-      font-size: 3em;
-
-      @include icon-border(3em);
-
-      border: 1px solid $dark-gray;
-    }
-
-    div:first-child {
-      @include border-y(1px, #3d3d3d);
-      @include w-(45%);
-
-      margin-right: -5px;
-    }
-
-    div:last-child {
-      @include border-y(1px, #3d3d3d);
-      @include w-(45%);
-
-      margin-left: -5px;
-    }
-
-    section {
-      h3 {
-        letter-spacing: 5px;
-      }
-    }
-  }
 }
 
 @include desktop {
   footer {
-    & > div:nth-child(2) {
+    & > .footer_middle {
       @include px-(20px, 20px);
       @include py-(0, 40px);
       @include col-(1);
 
-      h3 {
+      .footer_middle_header {
         @include py-(40px, 16px);
 
         letter-spacing: 5px;
       }
     }
 
-    & > div:first-child {
+    & > .footer_top {
       @include px-(20px, 20px);
 
       flex-direction: column;
@@ -163,16 +163,16 @@ footer {
 
 @include tablet {
   footer {
-    & > div:last-child {
+    & > .footer_bottom {
       flex-direction: column;
 
-      p {
+      .footer_bottom_par {
         @include py-(8px, 0);
       }
     }
 
-    & > div:first-child {
-      div:nth-child(2) {
+    & > .footer_top {
+      .footer_top_middle {
         @include icon-border(1.5em);
       }
 

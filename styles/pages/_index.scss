@@ -1,0 +1,220 @@
+#index-main {
+  & > div {
+    @include text-($white);
+
+    section {
+      @include py-(32px, 32px);
+      @include px-(40px, 40px);
+
+      div {
+        p {
+          @include py-(16px, 16px);
+        }
+
+        h4 {
+          font-size: 20px;
+        }
+      }
+
+      button {
+        @include my-(16px, 16px);
+        @include py-(8px, 8px);
+        @include px-(8px, 8px);
+        @include bg-($white);
+
+        transition: all 0.2s ease-in-out;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    section:nth-last-child(n + 2) {
+      img {
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    section:first-child {
+      @include bg-($light-orange);
+
+      button {
+        @include text-($light-orange);
+      }
+    }
+
+    section:nth-child(2) {
+      @include bg-($gray);
+
+      button {
+        @include text-($gray);
+      }
+    }
+
+    section:last-child {
+      @include bg-($blue);
+    }
+  }
+
+  & > section {
+    @include px-(80px, 80px);
+    @include py-(80px, 80px);
+
+    h3 {
+      @include text-($light-orange);
+      @include py-(0, 40px);
+
+      font-size: 30px;
+    }
+
+    div {
+      @include col-(2);
+      @include text-($black);
+
+      grid-gap: 80px 240px;
+
+      div {
+        h4 {
+          @include py-(24px, 24px);
+        }
+      }
+    }
+  }
+}
+
+#index-header {
+  @include px-(16px, 16px);
+  @include py-(40px, 40px);
+
+  height: 440px;
+  background:
+    url(../images/hero.png),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  h1,
+  h2,
+  button {
+    @include text-($white);
+  }
+
+  form,
+  a {
+    background: rgba($color: #eee, $alpha: 0.8);
+  }
+
+  input,
+  a {
+    @include px-(8px, 8px);
+    @include py-(8px, 8px);
+  }
+
+  form {
+    @include w-(60%);
+    @include px-(24px, 24px);
+    @include py-(40px, 40px);
+
+    border-radius: 8px;
+
+    div {
+      @include py-(4px, 4px);
+
+      input {
+        @include w-(75%);
+      }
+
+      input:focus {
+        border: 1px solid $blue;
+        box-shadow: 0 0 8px $blue;
+      }
+
+      button {
+        @include bg-($red);
+        @include w-(96px);
+
+        margin-left: -2px;
+      }
+
+      button:hover {
+        background-color: #db200b;
+      }
+    }
+  }
+
+  a {
+    @include text-($black);
+
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a:hover {
+    transform: scale(1.1);
+    background-color: #eee;
+  }
+}
+
+@include desktop {
+  #index-main {
+    & > section {
+      h3 {
+        font-size: 25px;
+      }
+
+      div {
+        grid-gap: 80px;
+      }
+    }
+  }
+
+  #index-header {
+    form {
+      width: 75%;
+    }
+  }
+}
+
+@include tablet {
+  #index-main {
+    & > section:first-child {
+      padding: 64px 24px;
+
+      div {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    div {
+      section {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+
+  #index-header {
+    form {
+      width: 100%;
+      text-align: center;
+
+      div {
+        flex-direction: column;
+        align-items: center;
+
+        input {
+          width: 100%;
+        }
+
+        button {
+          @include px-(8px,8px);
+          @include py-(8px,8px);
+          @include my-(16px,0);
+        }
+      }
+    }
+  }
+}

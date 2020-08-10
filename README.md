@@ -14,7 +14,8 @@
 
 ## Live Demo
 
-[Live Demo Link](https://raw.githack.com/El-Potato-Slayer/directory-of-schools/feature-branch/index.html)
+1. [Presentation](https://www.loom.com/share/fc9aaf3129e244e6a0eb5adcd02cfd55) of the website.
+2. [Live Demo Link](https://raw.githack.com/El-Potato-Slayer/directory-of-schools/feature-branch/index.html)
 
 ## To get a local copy up and running follow these simple example steps.
 

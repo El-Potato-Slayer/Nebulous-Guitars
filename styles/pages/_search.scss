@@ -6,7 +6,7 @@
     @include py-(48px, 64px);
     @include my-(48px, 48px);
 
-    h2 {
+    h1 {
       @include my-(0, 32px);
 
       color: $gray;
@@ -88,7 +88,7 @@
       box-shadow: -4px 15px 5px 2px rgba($color: #000, $alpha: 0.5);
       transition: all 0.2s ease-in-out;
     }
-    
+
     div.card:hover {
       transform: scale(1.1);
       box-shadow: -24px 30px 20px 2px rgba($color: #000, $alpha: 0.5);
@@ -101,7 +101,7 @@
     form {
       @include px-(40px, 40px);
 
-      h2 {
+      h1 {
         font-size: 20px;
       }
     }

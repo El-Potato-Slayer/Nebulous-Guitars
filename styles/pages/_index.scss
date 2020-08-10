@@ -67,7 +67,7 @@
     div {
       @include col-(2);
       @include text-($black);
-      
+
       grid-gap: 80px 240px;
 
       div {
@@ -76,7 +76,7 @@
         }
       }
     }
-  }  
+  }
 }
 
 #index-header {
@@ -84,7 +84,7 @@
   @include py-(40px, 40px);
 
   height: 440px;
-  background: 
+  background:
     url(../images/hero.png),
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: overlay;
@@ -195,6 +195,22 @@
   #index-header {
     form {
       width: 100%;
+      text-align: center;
+      div{
+        flex-direction: column;
+        align-items: center;
+
+        input{
+          width: 100%;
+        }
+
+        button{
+          @include px-(8px,8px);
+          @include py-(8px,8px);
+          @include my-(16px,0);
+
+        }
+      }
     }
   }
 }

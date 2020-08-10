@@ -455,6 +455,22 @@ footer > div:first-child section h3 {
 
   #index-header form {
     width: 100%;
+    text-align: center;
+  }
+  #index-header form div {
+    flex-direction: column;
+    align-items: center;
+  }
+  #index-header form div input {
+    width: 100%;
+  }
+  #index-header form div button {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 0;
   }
 }
 #search-main form {
@@ -466,7 +482,7 @@ footer > div:first-child section h3 {
   margin-top: 48px;
   margin-bottom: 48px;
 }
-#search-main form h2 {
+#search-main form h1 {
   margin-top: 0;
   margin-bottom: 32px;
   color: #98a4a5;
@@ -549,7 +565,7 @@ footer > div:first-child section h3 {
     padding-left: 40px;
     padding-right: 40px;
   }
-  #search-main form h2 {
+  #search-main form h1 {
     font-size: 20px;
   }
   #search-main div.grid {

@@ -1,28 +1,4 @@
 #index-main {
-  & > section {
-    @include px-(80px, 80px);
-    @include py-(80px, 80px);
-
-    h3 {
-      @include text-($light-orange);
-      @include py-(0, 40px);
-
-      font-size: 30px;
-    }
-
-    div {
-      @include col-(2);
-      @include text-($black);
-      grid-gap: 80px 240px;
-
-      div {
-        h4 {
-          @include py-(24px, 24px);
-        }
-      }
-    }
-  }
-
   & > div {
     @include text-($white);
 
@@ -63,6 +39,7 @@
         @include text-($light-orange);
       }
     }
+
     section:nth-child(2) {
       @include bg-($gray);
 
@@ -70,10 +47,36 @@
         @include text-($gray);
       }
     }
+
     section:last-child {
       @include bg-($blue);
     }
   }
+
+  & > section {
+    @include px-(80px, 80px);
+    @include py-(80px, 80px);
+
+    h3 {
+      @include text-($light-orange);
+      @include py-(0, 40px);
+
+      font-size: 30px;
+    }
+
+    div {
+      @include col-(2);
+      @include text-($black);
+      
+      grid-gap: 80px 240px;
+
+      div {
+        h4 {
+          @include py-(24px, 24px);
+        }
+      }
+    }
+  }  
 }
 
 #index-header {
@@ -81,7 +84,8 @@
   @include py-(40px, 40px);
 
   height: 440px;
-  background: url(../images/hero.png),
+  background: 
+    url(../images/hero.png),
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   background-blend-mode: overlay;
   background-position: center;

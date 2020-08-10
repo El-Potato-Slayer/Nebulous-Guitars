@@ -298,27 +298,6 @@ footer > div:first-child section h3 {
     font-size: 14px;
   }
 }
-#index-main > section {
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-#index-main > section h3 {
-  color: #e06b4b;
-  padding-top: 0;
-  padding-bottom: 40px;
-  font-size: 30px;
-}
-#index-main > section div {
-  grid-template-columns: repeat(2, 1fr);
-  color: #000;
-  grid-gap: 80px 240px;
-}
-#index-main > section div div h4 {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 #index-main > div {
   color: #fff;
 }
@@ -362,6 +341,27 @@ footer > div:first-child section h3 {
 }
 #index-main > div section:last-child {
   background: #509bd7;
+}
+#index-main > section {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#index-main > section h3 {
+  color: #e06b4b;
+  padding-top: 0;
+  padding-bottom: 40px;
+  font-size: 30px;
+}
+#index-main > section div {
+  grid-template-columns: repeat(2, 1fr);
+  color: #000;
+  grid-gap: 80px 240px;
+}
+#index-main > section div div h4 {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 #index-header {

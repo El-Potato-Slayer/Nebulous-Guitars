@@ -460,14 +460,14 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
     width: 100%;
     text-align: center;
   }
-  #index-header form div {
+  #index-header form .input_button_wrapper {
     flex-direction: column;
     align-items: center;
   }
-  #index-header form div input {
+  #index-header form .input_button_wrapper .input_button_wrapper_input {
     width: 100%;
   }
-  #index-header form div button {
+  #index-header form .input_button_wrapper .input_button_wrapper_button {
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 8px;

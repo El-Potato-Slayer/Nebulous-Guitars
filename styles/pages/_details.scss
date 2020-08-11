@@ -1,4 +1,4 @@
-#details-main {
+.details-main {
   @include mx-(40px, 40px);
   @include my-(80px, 80px);
 
@@ -100,7 +100,7 @@
 }
 
 @include desktop {
-  #details-main {
+  .details-main {
     section {
       div.grid {
         grid-template-columns: 1fr;
@@ -110,7 +110,7 @@
 }
 
 @include tablet {
-  #details-main {
+  .details-main {
     @include mx-(16px, 16px);
 
     section {

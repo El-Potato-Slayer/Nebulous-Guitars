@@ -1,4 +1,4 @@
-#search-main {
+.search-main {
   form {
     background: $mid-light-gray;
 
@@ -97,7 +97,7 @@
 }
 
 @include desktop {
-  #search-main {
+  .search-main {
     form {
       @include px-(40px, 40px);
 
@@ -113,7 +113,7 @@
 }
 
 @include tablet {
-  #search-main {
+  .search-main {
     form {
       & > div {
         flex-direction: column;

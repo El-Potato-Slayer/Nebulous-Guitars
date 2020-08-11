@@ -1,4 +1,4 @@
-#index-main {
+.index-main {
   & > div {
     @include text-($white);
 
@@ -83,7 +83,7 @@
   }
 }
 
-#index-header {
+.index-header {
   @include px-(16px, 16px);
   @include py-(40px, 40px);
 
@@ -159,7 +159,7 @@
 }
 
 @include desktop {
-  #index-main {
+  .index-main {
     & > .index_main_top {
       .index_top_header {
         font-size: 25px;
@@ -171,7 +171,7 @@
     }
   }
 
-  #index-header {
+  .index-header {
     form {
       width: 75%;
     }
@@ -179,7 +179,7 @@
 }
 
 @include tablet {
-  #index-main {
+  .index-main {
     & > .index_main_top {
       padding: 64px 24px;
 
@@ -196,7 +196,7 @@
     }
   }
 
-  #index-header {
+  .index-header {
     form {
       width: 100%;
       text-align: center;

@@ -300,23 +300,23 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
     font-size: 14px;
   }
 }
-#index-main > div {
+.index-main > div {
   color: #fff;
 }
-#index-main > div section {
+.index-main > div section {
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 40px;
   padding-right: 40px;
 }
-#index-main > div section div p {
+.index-main > div section div p {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-#index-main > div section div h4 {
+.index-main > div section div h4 {
   font-size: 20px;
 }
-#index-main > div section button {
+.index-main > div section button {
   margin-top: 16px;
   margin-bottom: 16px;
   padding-top: 8px;
@@ -326,50 +326,50 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   background: #fff;
   transition: all 0.2s ease-in-out;
 }
-#index-main > div section button:hover {
+.index-main > div section button:hover {
   transform: scale(1.1);
 }
-#index-main > div section:nth-last-child(n+2) img {
+.index-main > div section:nth-last-child(n+2) img {
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.4);
 }
-#index-main > div section:first-child {
+.index-main > div section:first-child {
   background: #e06b4b;
 }
-#index-main > div section:first-child button {
+.index-main > div section:first-child button {
   color: #e06b4b;
 }
-#index-main > div section:nth-child(2) {
+.index-main > div section:nth-child(2) {
   background: #98a4a5;
 }
-#index-main > div section:nth-child(2) button {
+.index-main > div section:nth-child(2) button {
   color: #98a4a5;
 }
-#index-main > div section:last-child {
+.index-main > div section:last-child {
   background: #509bd7;
 }
-#index-main > .index_main_top {
+.index-main > .index_main_top {
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-#index-main > .index_main_top .index_top_header {
+.index-main > .index_main_top .index_top_header {
   color: #e06b4b;
   padding-top: 0;
   padding-bottom: 40px;
   font-size: 30px;
 }
-#index-main > .index_main_top .index_top_grid {
+.index-main > .index_main_top .index_top_grid {
   grid-template-columns: repeat(2, 1fr);
   color: #000;
   grid-gap: 80px 240px;
 }
-#index-main > .index_main_top .index_top_grid .index_grid_item h4 {
+.index-main > .index_main_top .index_top_grid .index_grid_item h4 {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-#index-header {
+.index-header {
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 40px;
@@ -381,23 +381,23 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#index-header .index_header_heading,
-#index-header .index_header_subheading,
-#index-header .input_button_wrapper_button {
+.index-header .index_header_heading,
+.index-header .index_header_subheading,
+.index-header .input_button_wrapper_button {
   color: #fff;
 }
-#index-header form,
-#index-header a {
+.index-header form,
+.index-header a {
   background: rgba(238, 238, 238, 0.8);
 }
-#index-header input,
-#index-header a {
+.index-header input,
+.index-header a {
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-#index-header form {
+.index-header form {
   width: 60%;
   padding-left: 24px;
   padding-right: 24px;
@@ -405,71 +405,71 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   padding-bottom: 40px;
   border-radius: 8px;
 }
-#index-header form .input_button_wrapper {
+.index-header form .input_button_wrapper {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-#index-header form .input_button_wrapper .input_button_wrapper_input {
+.index-header form .input_button_wrapper .input_button_wrapper_input {
   width: 75%;
 }
-#index-header form .input_button_wrapper .input_button_wrapper_input:focus {
+.index-header form .input_button_wrapper .input_button_wrapper_input:focus {
   border: 1px solid #509bd7;
   box-shadow: 0 0 8px #509bd7;
 }
-#index-header form .input_button_wrapper .input_button_wrapper_button {
+.index-header form .input_button_wrapper .input_button_wrapper_button {
   background: #d35649;
   width: 96px;
   margin-left: -2px;
 }
-#index-header form .input_button_wrapper .input_button_wrapper_button:hover {
+.index-header form .input_button_wrapper .input_button_wrapper_button:hover {
   background-color: #db200b;
 }
-#index-header a {
+.index-header a {
   color: #000;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
 }
-#index-header a:hover {
+.index-header a:hover {
   transform: scale(1.1);
   background-color: #eee;
 }
 
 @media (max-width: 1024px) {
-  #index-main > .index_main_top .index_top_header {
+  .index-main > .index_main_top .index_top_header {
     font-size: 25px;
   }
-  #index-main > .index_main_top .index_top_grid {
+  .index-main > .index_main_top .index_top_grid {
     grid-gap: 80px;
   }
 
-  #index-header form {
+  .index-header form {
     width: 75%;
   }
 }
 @media (max-width: 768px) {
-  #index-main > .index_main_top {
+  .index-main > .index_main_top {
     padding: 64px 24px;
   }
-  #index-main > .index_main_top .index_top_grid {
+  .index-main > .index_main_top .index_top_grid {
     grid-template-columns: 1fr;
   }
-  #index-main div section {
+  .index-main div section {
     flex-direction: column;
     text-align: center;
   }
 
-  #index-header form {
+  .index-header form {
     width: 100%;
     text-align: center;
   }
-  #index-header form .input_button_wrapper {
+  .index-header form .input_button_wrapper {
     flex-direction: column;
     align-items: center;
   }
-  #index-header form .input_button_wrapper .input_button_wrapper_input {
+  .index-header form .input_button_wrapper .input_button_wrapper_input {
     width: 100%;
   }
-  #index-header form .input_button_wrapper .input_button_wrapper_button {
+  .index-header form .input_button_wrapper .input_button_wrapper_button {
     padding-left: 8px;
     padding-right: 8px;
     padding-top: 8px;
@@ -478,7 +478,7 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
     margin-bottom: 0;
   }
 }
-#search-main form {
+.search-main form {
   background: #eee;
   padding-left: 56px;
   padding-right: 56px;
@@ -487,19 +487,19 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   margin-top: 48px;
   margin-bottom: 48px;
 }
-#search-main form h1 {
+.search-main form h1 {
   margin-top: 0;
   margin-bottom: 32px;
   color: #98a4a5;
 }
-#search-main form div div {
+.search-main form div div {
   margin-left: 4px;
   margin-right: 4px;
 }
-#search-main form div div label {
+.search-main form div div label {
   font-size: 14px;
 }
-#search-main form div div input {
+.search-main form div div input {
   border: 1px solid #98a4a5;
   border-radius: 3px;
   padding-left: 8px;
@@ -509,11 +509,11 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   margin-top: 4px;
   margin-bottom: 0;
 }
-#search-main form div div input:focus {
+.search-main form div div input:focus {
   border: 1px solid #509bd7;
   box-shadow: 0 0 4px #509bd7;
 }
-#search-main form div button {
+.search-main form div button {
   margin-left: 4px;
   margin-right: 4px;
   padding-left: 12px;
@@ -525,25 +525,25 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
-#search-main form div #search {
+.search-main form div #search {
   background-color: #457db4;
 }
-#search-main form div #filter {
+.search-main form div #filter {
   background: #e5ac5b;
 }
-#search-main form div #search:hover {
+.search-main form div #search:hover {
   background: #0c5cac;
 }
-#search-main form div #filter:hover {
+.search-main form div #filter:hover {
   background: #e0880d;
 }
-#search-main > p {
+.search-main > p {
   font-size: 35px;
   color: #98a4a5;
   margin-top: 0;
   margin-bottom: 40px;
 }
-#search-main div.grid {
+.search-main div.grid {
   grid-template-columns: repeat(3, 1fr);
   padding-left: 80px;
   padding-right: 80px;
@@ -551,104 +551,104 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   margin-bottom: 80px;
   grid-gap: 56px 24px;
 }
-#search-main div.grid a {
+.search-main div.grid a {
   height: 100%;
   width: 100%;
   color: #fff;
 }
-#search-main div.grid div.card {
+.search-main div.grid div.card {
   box-shadow: -4px 15px 5px 2px rgba(0, 0, 0, 0.5);
   transition: all 0.2s ease-in-out;
 }
-#search-main div.grid div.card:hover {
+.search-main div.grid div.card:hover {
   transform: scale(1.1);
   box-shadow: -24px 30px 20px 2px rgba(0, 0, 0, 0.5);
 }
 
 @media (max-width: 1024px) {
-  #search-main form {
+  .search-main form {
     padding-left: 40px;
     padding-right: 40px;
   }
-  #search-main form h1 {
+  .search-main form h1 {
     font-size: 20px;
   }
-  #search-main div.grid {
+  .search-main div.grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 768px) {
-  #search-main form > div {
+  .search-main form > div {
     flex-direction: column;
     align-items: center;
   }
-  #search-main form > div div {
+  .search-main form > div div {
     margin-top: 8px;
     margin-bottom: 8px;
     text-align: center;
   }
-  #search-main form > div div input {
+  .search-main form > div div input {
     width: 100%;
   }
-  #search-main form > div button {
+  .search-main form > div button {
     align-self: center;
     margin-top: 8px;
     margin-bottom: 8px;
   }
-  #search-main div.grid {
+  .search-main div.grid {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-#details-main {
+.details-main {
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 80px;
   margin-bottom: 80px;
 }
-#details-main > p {
+.details-main > p {
   margin-top: 32px;
   margin-bottom: 32px;
 }
-#details-main section {
+.details-main section {
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 24px;
   padding-bottom: 16px;
   box-shadow: 0 0 10px #98a4a5;
 }
-#details-main section h1 {
+.details-main section h1 {
   margin-top: 8px;
   margin-bottom: 16px;
   color: #e17e65;
   font-size: 30px;
 }
-#details-main section address {
+.details-main section address {
   font-style: normal;
 }
-#details-main section address p {
+.details-main section address p {
   padding-left: 8px;
   padding-right: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
 }
-#details-main section address p i {
+.details-main section address p i {
   color: #509bd7;
 }
-#details-main section div.grid {
+.details-main section div.grid {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
 }
-#details-main section div.grid p {
+.details-main section div.grid p {
   border: 1px solid #98a4a5;
   padding-top: 4px;
   padding-bottom: 4px;
   padding-left: 8px;
   padding-right: 8px;
 }
-#details-main section div.grid p span {
+.details-main section div.grid p span {
   color: #457db4;
 }
-#details-main section button {
+.details-main section button {
   padding-left: 6px;
   padding-right: 6px;
   padding-top: 8px;
@@ -660,17 +660,17 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   color: #fff;
   transition: all 0.2s ease-in-out;
 }
-#details-main section button:hover {
+.details-main section button:hover {
   background: #457db4;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
-#details-main > div {
+.details-main > div {
   background: #eee;
 }
-#details-main > div a {
+.details-main > div a {
   padding-top: 24px;
   padding-bottom: 24px;
   padding-left: 48px;
@@ -680,56 +680,56 @@ footer > .footer_bottom .footer_bottom_par > a:hover {
   letter-spacing: 5px;
   font-size: 24px;
 }
-#details-main > div:hover a {
+.details-main > div:hover a {
   color: #e17e65;
 }
-#details-main h2 {
+.details-main h2 {
   color: #e17e65;
   margin-top: 48px;
   margin-bottom: 48px;
 }
-#details-main iframe {
+.details-main iframe {
   width: 100%;
 }
 
 @media (max-width: 1024px) {
-  #details-main section div.grid {
+  .details-main section div.grid {
     grid-template-columns: 1fr;
   }
 }
 @media (max-width: 768px) {
-  #details-main {
+  .details-main {
     margin-left: 16px;
     margin-right: 16px;
   }
-  #details-main section {
+  .details-main section {
     padding-left: 12px;
     padding-right: 12px;
     text-align: center;
   }
-  #details-main section h1 {
+  .details-main section h1 {
     font-size: 24px;
   }
-  #details-main section div.grid {
+  .details-main section div.grid {
     text-align: left;
     font-size: 14px;
   }
-  #details-main section address {
+  .details-main section address {
     flex-direction: column;
     text-align: left;
     align-items: flex-start;
   }
-  #details-main > div {
+  .details-main > div {
     text-align: center;
   }
-  #details-main > div a {
+  .details-main > div a {
     font-size: 16px;
     padding-top: 24px;
     padding-bottom: 24px;
     padding-left: 16px;
     padding-right: 16px;
   }
-  #details-main h2 {
+  .details-main h2 {
     font-size: 20px;
   }
 }

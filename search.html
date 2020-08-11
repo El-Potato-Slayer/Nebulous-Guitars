@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles/global.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Nebulous Guitars</title>
+  </head>
+  <body>
+    <nav class="flex space-between align-center uppercase bold">
+      <a href="index.html">
+        <img src="images/logo2.png" alt="logo" />
+      </a>
+      <div class="flex space-between align-center">
+        <a href="#">
+          <i class="fa fa-search"></i>
+          <span>Stores</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-user-o"></i>
+          <span>About</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-wifi"></i>
+          <span>Blog</span>
+        </a>
+        <a href="#">
+          <i class="fa fa-bars px-4"></i>
+          <span>More</span>
+        </a>
+      </div>
+    </nav>
+
+    <main class="search-main text-center">
+      <form class="text-center">
+        <h1>Filter by area name and search radius:</h1>
+        <div class="flex text-left justify-center">
+          <div class="flex flex-column">
+            <label class="uppercase bold" for="area">Area name:</label>
+            <input type="text" id="area" name="area" />
+          </div>
+          <div class="flex flex-column">
+            <label class="uppercase bold" for="radius">Search radius:</label>
+            <input type="text" id="radius" name="radius" />
+          </div>
+          <button id="search" type="button" class="bold">Search</button>
+          <button id="filter" type="button" class="bold">Clear Filter</button>
+        </div>
+      </form>
+
+      <p class="bold">Search Results Found 3 Store(s)</p>
+      <div class="grid justify-center">
+        <div class="card mx-auto">
+          <a href="details.html" class="flex align-center">
+            Address: 12 Swagger Bagger Ave &nbsp; Number: 123456789
+          </a>
+        </div>
+        <div class="card mx-auto">
+          <a href="details.html" class="flex align-center">
+            Address: 12 Swagger Bagger Ave &nbsp; Number: 123456789
+          </a>
+        </div>
+        <div class="card mx-auto">
+          <a href="details.html" class="flex align-center">
+            Address: 12 Swagger Bagger Ave &nbsp; Number: 123456789
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer_top flex space-around align-center bold uppercase">
+        <div class="footer_top_left flex space-around">
+          <a class="footer_top_link" href="#">Home</a>
+          <a class="footer_top_link" href="#">Search</a>
+          <a class="footer_top_link" href="#">About Us</a>
+          <a class="footer_top_link" href="#">Advertise</a>
+        </div>
+        <div class="footer_top_middle">
+          <i class="fa fa-map-marker"></i>
+        </div>
+        <div class="footer_top_right flex space-around">
+          <a class="footer_top_link" href="#">Facebook</a>
+          <a class="footer_top_link" href="#">Twitter</a>
+          <a class="footer_top_link" href="#">Blog</a>
+          <a class="footer_top_link" href="#">Google</a>
+        </div>
+      </div>
+      <div class="footer_middle grid">
+        <section class="footer_middle_left text-center">
+          <h3 class="footer_middle_header uppercase">Subscribe</h3>
+          <form class="footer_middle_form flex justify-center">
+            <input type="email" placeholder="you@example.com" />
+            <button type="button">
+              Send
+            </button>
+          </form>
+        </section>
+        <section class="footer_middle_middle text-center">
+          <h3 class="footer_middle_header uppercase">Contact</h3>
+          <p class="footer_middle_par">Have a question or submission?</p>
+          <a href="#" class="footer_middle_link">info@nebulousguitars.com</a>
+        </section>
+        <section class="footer_middle_right text-center">
+          <h3 class="footer_middle_header uppercase">About</h3>
+          <p class="footer_middle_par">
+            Nebulous Guitars is a franchise which boasts more than 40 000 stores
+            all over the world. With our website, you'll be able to find the
+            nearest store near you
+            <a href="#" class="footer_middle_link">Learn more...</a>
+          </p>
+        </section>
+      </div>
+      <div class="footer_bottom flex space-between text-center">
+        <div class="footer_bottom_left">
+          <a href="#" class="footer_bottom_link">
+            <i class="fa fa-facebook fa-lg"></i>
+          </a>
+          <a href="#" class="footer_bottom_link">
+            <i class="fa fa-twitter fa-lg"></i>
+          </a>
+          <a href="#" class="footer_bottom_link">
+            <i class="fa fa-pinterest fa-lg"></i>
+          </a>
+          <a href="#" class="footer_bottom_link">
+            <i class="fa fa-tumblr fa-lg"></i>
+          </a>
+          <a href="#" class="footer_bottom_link">
+            <i class="fa fa-instagram fa-lg"></i>
+          </a>
+        </div>
+        <div class="footer_bottom_right">
+          <p class="footer_bottom_par">
+            © 2020 Nebulous Guitars is a Trademark of
+            <a href="#">Swagger Bagger LLC</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,152 @@
+.details-main {
+  @include mx-(40px, 40px);
+  @include my-(80px, 80px);
+
+  & > p {
+    @include my-(32px, 32px);
+  }
+
+  section {
+    @include px-(24px, 24px);
+    @include py-(24px, 16px);
+
+    box-shadow: 0 0 10px $gray;
+
+    h1 {
+      @include my-(8px, 16px);
+
+      color: $orange;
+      font-size: 30px;
+    }
+
+    address {
+      font-style: normal;
+
+      p {
+        @include px-(8px, 8px);
+        @include py-(8px, 8px);
+
+        i {
+          color: $blue;
+        }
+      }
+    }
+
+    div.grid {
+      @include col-(2);
+
+      grid-gap: 8px;
+
+      p {
+        border: 1px solid $gray;
+
+        @include py-(4px, 4px);
+        @include px-(8px, 8px);
+
+        span {
+          color: $ocean-blue;
+        }
+      }
+    }
+
+    button {
+      @include px-(6px, 6px);
+      @include py-(8px, 8px);
+      @include my-(24px, 8px);
+
+      border-radius: 4px;
+      background-color: $blue;
+      color: $white;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background: $ocean-blue;
+
+      @include px-(10px, 10px);
+      @include py-(12px, 12px);
+    }
+  }
+
+  & > div {
+    background: $mid-light-gray;
+
+    a {
+      @include py-(24px, 24px);
+      @include px-(48px, 48px);
+
+      display: block;
+      color: $dark-gray;
+      letter-spacing: 5px;
+      font-size: 24px;
+    }
+  }
+
+  & > div:hover {
+    a {
+      color: $orange;
+    }
+  }
+
+  h2 {
+    color: $orange;
+
+    @include my-(48px, 48px);
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
+
+@include desktop {
+  .details-main {
+    section {
+      div.grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+@include tablet {
+  .details-main {
+    @include mx-(16px, 16px);
+
+    section {
+      @include px-(12px, 12px);
+
+      text-align: center;
+
+      h1 {
+        font-size: 24px;
+      }
+
+      div.grid {
+        text-align: left;
+        font-size: 14px;
+      }
+
+      address {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+      }
+    }
+
+    & > div {
+      text-align: center;
+
+      a {
+        font-size: 16px;
+
+        @include py-(24px, 24px);
+        @include px-(16px, 16px);
+      }
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+nav {
+  font-family: "Roboto", sans-serif;
+
+  @include px-(40px, 40px);
+  @include bg-($red);
+
+  img {
+    width: 200px;
+    filter: invert(1);
+
+    @include my-(8px, 4px);
+  }
+
+  & > div {
+    @include py-(8px, 8px);
+
+    a {
+      @include px-(8px, 8px);
+      @include text-($white);
+
+      transition: all 0.2s ease-in-out;
+
+      i {
+        @include px-(4px, 4px);
+      }
+    }
+
+    a:hover {
+      text-decoration: underline;
+      transform: scale(1.15);
+    }
+  }
+}
+
+@include desktop {
+  nav {
+    span {
+      display: none;
+    }
+  }
+}
+
+@include tablet {
+  nav {
+    flex-direction: column;
+
+    div {
+      width: 200px;
+    }
+  }
+}

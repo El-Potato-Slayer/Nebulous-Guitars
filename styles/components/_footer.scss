@@ -1,0 +1,184 @@
+footer {
+  @include text-($white);
+  @include bg-($black);
+
+  & > .footer_top {
+    @include px-(80px, 80px);
+    @include py-(40px, 40px);
+    @include text-($white);
+
+    .footer_top_link {
+      @include py-(16px, 16px);
+      @include text-($white);
+
+      transition: all 0.2s ease-in-out;
+    }
+
+    .footer_top_link:hover {
+      transform: scale(1.2);
+      text-decoration: underline;
+    }
+
+    .footer_top_middle {
+      font-size: 3em;
+
+      @include icon-border(3em);
+
+      border: 1px solid $dark-gray;
+    }
+
+    .footer_top_left {
+      @include border-y(1px, #3d3d3d);
+      @include w-(45%);
+
+      margin-right: -5px;
+    }
+
+    .footer_top_right {
+      @include border-y(1px, #3d3d3d);
+      @include w-(45%);
+
+      margin-left: -5px;
+    }
+
+    section {
+      h3 {
+        letter-spacing: 5px;
+      }
+    }
+  }
+
+  & > .footer_middle {
+    @include px-(80px, 80px);
+    @include py-(40px, 40px);
+    @include col-(3);
+
+    .footer_middle_header {
+      @include py-(40px, 40px);
+
+      letter-spacing: 5px;
+    }
+
+    .footer_middle_link {
+      color: $light-orange;
+    }
+
+    .footer_middle_link:hover {
+      text-decoration: underline;
+    }
+
+    .footer_middle_form {
+      @include py-(4px, 4px);
+
+      input {
+        @include bg-(transparent);
+        @include text-($gray);
+        @include px-(8px, 8px);
+        @include py-(8px, 8px);
+        @include w-(75%);
+
+        border: 1px solid $dark-gray;
+      }
+
+      input:focus {
+        box-shadow: 0 0 4px $white;
+      }
+
+      button {
+        @include px-(40px, 40px);
+        @include py-(8px, 8px);
+        @include bg-($dark-gray);
+        @include text-($white);
+
+        transition: all 0.2s ease-in-out;
+      }
+
+      button:hover {
+        background-color: $gray;
+        color: $dark;
+      }
+    }
+  }
+
+  & > .footer_bottom {
+    background-color: $dark;
+
+    @include px-(24px, 24px);
+    @include py-(24px, 32px);
+
+    color: $gray;
+
+    .footer_bottom_link {
+      @include px-(8px, 8px);
+
+      color: $gray;
+
+      i {
+        transition: all 0.2s ease-in-out;
+      }
+
+      i:hover {
+        transform: scale(1.3);
+        color: $light-gray;
+      }
+    }
+
+    .footer_bottom_par {
+      & > a {
+        color: $light-gray;
+      }
+
+      & > a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@include desktop {
+  footer {
+    & > .footer_middle {
+      @include px-(20px, 20px);
+      @include py-(0, 40px);
+      @include col-(1);
+
+      .footer_middle_header {
+        @include py-(40px, 16px);
+
+        letter-spacing: 5px;
+      }
+    }
+
+    & > .footer_top {
+      @include px-(20px, 20px);
+
+      flex-direction: column;
+
+      div:not(:nth-child(2)) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include tablet {
+  footer {
+    & > .footer_bottom {
+      flex-direction: column;
+
+      .footer_bottom_par {
+        @include py-(8px, 0);
+      }
+    }
+
+    & > .footer_top {
+      .footer_top_middle {
+        @include icon-border(1.5em);
+      }
+
+      div:not(:nth-child(2)) {
+        font-size: 14px;
+      }
+    }
+  }
+}
